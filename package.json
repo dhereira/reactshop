@@ -2,7 +2,7 @@
   "name": "react-shop",
   "version": "1.0.0",
   "description": "react-eshop",
-  "homepage": "https://dhereira.github.io/reactshop/",
+  "homepage": "https://dhereira.shop/",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
