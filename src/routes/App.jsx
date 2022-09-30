@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Layout  from '@containers/Layout';
 import  Login  from '@pages/Login';
 import SendEmail from '@pages/SendEmail';
@@ -19,8 +19,9 @@ const App = () => {
   const initialState = useInitialState();
     return (
       <AppContext.Provider value ={initialState}>
-      <BrowserRouter>
+      <BrowserRouter basename='/reactPractico'>
         <Layout>
+          
           <Routes>
             <Route  exact path="/" element={<Home />}/> 
             <Route  exact path="/login" element={<Login />}/>
