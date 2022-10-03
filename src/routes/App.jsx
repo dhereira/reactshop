@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout  from '@containers/Layout';
 import  Login  from '@pages/Login';
 import SendEmail from '@pages/SendEmail';
@@ -11,15 +11,15 @@ import CreateAccount from '@pages/CreateAccount';
 import Checkout from '@pages/Checkout';
 import Orders from '@pages/Orders';
 import  NotFound  from '@pages/NotFound';
-import AppContext from '../context/AppContext';
-import useInitialState from '../hooks/useInitialState';
+import AppContext from '@context/AppContext';
+import useInitialState from '@hooks/useInitialState';
 import '@styles/global.css';
 
 const App = () => {
   const initialState = useInitialState();
     return (
       <AppContext.Provider value ={initialState}>
-      <BrowserRouter basename='/reactshop'>
+      <BrowserRouter basename='reactshop'>
         <Layout>
           
           <Routes>
