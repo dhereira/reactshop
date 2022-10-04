@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout  from '@containers/Layout';
 import  Login  from '@pages/Login';
 import SendEmail from '@pages/SendEmail';
