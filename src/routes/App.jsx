@@ -20,7 +20,7 @@ const App = () => {
   const initialState = useInitialState();
     return (
       <AppContext.Provider value ={initialState}>
-       <> <Header/> </>
+       <> <Header/> 
       <BrowserRouter basename='/reactshop'>
         <Layout>
             <Routes>
@@ -37,6 +37,7 @@ const App = () => {
           </Routes>
         </Layout>
       </BrowserRouter>
+      </>
     </AppContext.Provider>
     );
 }
