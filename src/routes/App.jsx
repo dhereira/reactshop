@@ -22,8 +22,8 @@ const App = () => {
       <AppContext.Provider value ={initialState}>
        <> <Header/> 
       <BrowserRouter >
-        <Layout>
-            <Switch>              
+        <Switch>
+            <Layout>              
             <Route path= "/" element={<Home />} /> 
             <Route  exact path="/login" element={<Login />}/>
             <Route  exact path="/send-email" element={<SendEmail />} />
@@ -34,8 +34,8 @@ const App = () => {
             <Route  exact path="/checkout" element={<Checkout />} />
             <Route  exact path="/orders" element={<Orders />} />
             <Route path="*" element={<NotFound/>}/>            
-          </Switch>
-        </Layout>
+          </Layout>
+        </Switch>
       </BrowserRouter>
       </>
     </AppContext.Provider>
