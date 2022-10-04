@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
 import Layout  from '@containers/Layout';
 import  Login  from '@pages/Login';
 import SendEmail from '@pages/SendEmail';
@@ -21,7 +21,7 @@ const App = () => {
     return (
       <AppContext.Provider value ={initialState}>
        <> <Header/> 
-      <BrowserRouter basename='/reactshop'>
+      <BrowserRouter >
         <Layout>
             <Routes>              
             <Route path= "/" element={<Home />} /> 
